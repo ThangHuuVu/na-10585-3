@@ -7,7 +7,7 @@ import type { NextAuthConfig } from "next-auth";
 const config = {
   theme: { logo: "https://authjs.dev/img/logo-sm.png" },
   providers: [GitHub],
-  // basePath: "/auth",
+  basePath: "/auth",
   callbacks: {
     authorized({ request, auth }) {
       const { pathname } = request.nextUrl;
